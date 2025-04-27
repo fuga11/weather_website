@@ -1,64 +1,107 @@
 html{
   font-family: Arial, Helvetica, sans-serif;
 }
+body{
+  background-image: URL(../img/rainforest.png);
+}
 .main-container{
   height: 100vh;
   width: 100vw;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
   
-  background-color: antiquewhite;
 }
 .main-flex{
   display: flexbox;
-  background-color: rgb(192, 161, 121);
 }
 .appname{
   display:block;
-  background-color: rgb(24, 24, 123);
+  margin-bottom: 50px;
+}
+.appname-text{
+  font-size: 10px;
+  font-weight: 100;
 }
 .search-bar{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(72, 51, 23);
+  margin-bottom: 25px;
+}
+.search-input{
+  border-radius: 15px;
+  border: none;
+  width: 250px;
+  height: 20px;
+
 }
 .city{
   display: block;
-  background-color: rgb(63, 38, 5);
+  margin-bottom: 50px;
+}
+.city-name{
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+.weather-text-info{
+  margin-left: 20px;
+}
+.date-info{
+  font-size: 14px;
 }
 .middle-block{
   display: flex;
-  background-color: rgb(43, 91, 26);
+  margin-bottom: 60px;
 }
 .left-part{
   width: 50%;
-  background-color: rgb(44, 86, 146);
+  display: flex;
+}
+.temp{
+  font-size: 40px;
+}
+.weather{
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 14px;
 }
 .right-part{
   display: grid;
   grid-template-columns: repeat(3, 1fr) ;
   grid-template-rows: repeat(2, 1fr) ;
   width: 50%;
-  background-color: rgb(38, 58, 145);
+  gap: 10px;
 }
-.right-section{
-  background-color: rgba(188, 143, 143, 0.212);
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.right-section p {
+  font-weight: 100;
+  font-size: 14px;
+  margin: 2px 0;
+}
+.value-right-part {
+  font-size: 16px;
+  font-weight: 700;
 }
 .button-part{
   display: flexbox;
-  background-color: rgba(24, 24, 123, 0.11);
 }
 .title{
   height: 30%;
   display: block;
-  background-color: rgb(41, 41, 145);
 }
 .bar{
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   height: 70%;
-  display: inline-block;
-  background-color: rgb(107, 107, 224);
+}
+.bar-weather-table p{
+  font-size: 10px;
+  margin: 0;
 }
