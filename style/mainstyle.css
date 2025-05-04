@@ -1,5 +1,8 @@
-html{
+html {
   font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  font-size: 100px;
 }
 body{
   background-image: URL(../img/rainforest.png);
@@ -12,9 +15,9 @@ button{
   border: none;
   border-radius: 15px;
   margin-left: 15px;
-  height: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
 }
 button:hover{
@@ -25,10 +28,16 @@ button:hover{
   width: 100vw;
   margin: 0;
   padding: 0;
-  
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.main-container p{
+  font-size: 30px;
 }
 .main-flex{
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content:space-between ;
 }
 .appname{
   display:block;
@@ -47,8 +56,13 @@ button:hover{
 .search-input{
   border-radius: 15px;
   border: none;
-  width: 250px;
-  height: 20px;
+  width: 400px;
+  height: 40px;
+}
+.search-input::placeholder {
+  text-align: center;
+  font-size: 20px;
+  color: gray;
 }
 .city{
   display: block;
@@ -61,6 +75,9 @@ button:hover{
 .weather-text-info{
   margin-left: 20px;
 }
+.temp {
+  font-size: 20px;
+}
 .weather-icon{
   width: 75px;
   height: 75px;
@@ -70,8 +87,10 @@ button:hover{
 }
 .middle-block{
   display: flex;
+  justify-content: space-between;
   margin-bottom: 60px;
 }
+
 .left-part{
   width: 50%;
   display: flex;
@@ -82,7 +101,10 @@ button:hover{
 .weather{
   margin-top: 10px;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 20px;
+}
+.middleLeft{
+  display: flex;
 }
 .right-part{
   display: grid;
@@ -101,20 +123,23 @@ button:hover{
 }
 .right-section p {
   font-weight: 100;
-  font-size: 14px;
+  font-size: 25px;
   margin: 2px 0;
 }
 .value-right-part {
-  font-size: 16px;
+  font-size: 35px;
   font-weight: 700;
 }
 .button-part{
   display: flexbox;
 }
 .title{
-  height: 30%;
+  height: 50%;
   display: block;
   margin-bottom: 30px;
+}
+.title p{
+  font-size: 30px;
 }
 .bar{
   display: grid;
@@ -122,6 +147,10 @@ button:hover{
   height: 70%;
 }
 .bar-weather-table p{
-  font-size: 10px;
+  font-size: 20px;
   margin: 0;
+}
+.bar-weather-table img{
+  width: 50px;
+  height: 50px;
 }
