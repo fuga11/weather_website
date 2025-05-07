@@ -8,4 +8,4 @@ export function response() {
       .catch(error => {
         console.error('Error:', error)
         throw error;
-      });
+      })};
