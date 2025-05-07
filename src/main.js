@@ -1,5 +1,6 @@
 import { response } from "./responce.js";
 import { DateCityHTMLManager,middlePart } from "./dataManager.js";
+alert("Введите название города")
 const inputfield = document.querySelector('.search-input');
 document.querySelector('.search-button').addEventListener('click',() =>{
   response(inputfield.value)
