@@ -1,6 +1,8 @@
 import { response } from "./responce.js";
 import { DateCityHTMLManager,middlePart } from "./dataManager.js";
-response()
+const inputfield = document.querySelector('.search-input');
+document.querySelector('.search-button').addEventListener('click',() =>{
+  response(inputfield.value)
   .then(data => {
     console.log('Data:', data);
     DateCityHTMLManager(data);
@@ -9,3 +11,4 @@ response()
   .catch(error => {
     console.log('Error:', error);
   });
+});
